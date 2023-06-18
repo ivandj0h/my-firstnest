@@ -4,7 +4,6 @@
 
 A progressive NodeJS Framework for building efficient and scalable server-side applications.
 
-
 ## Installation
 
 ```bash
@@ -22,6 +21,20 @@ $ npm run start:dev
 
 # production mode
 $ npm run start:prod
+```
+
+## The CLI Commands
+
+### Create Module
+
+```typescript
+nest g module <module_name>
+```
+
+### Create Controller
+
+```typescript
+nest g co <controller_name> --no-spec
 ```
 
 ## Test
@@ -45,7 +58,6 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 
 - [ivandjoh](https://linkedin.com/en/ivandjoh)
 - [delvin](https://github.com/delvincakep)
-
 
 ## License
 
