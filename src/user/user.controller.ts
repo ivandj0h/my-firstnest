@@ -1,4 +1,5 @@
 import { Body, Controller, Get, Param, Post } from '@nestjs/common';
+import { CreateUserDTO } from './dto/createUserDTO';
 
 @Controller('user')
 export class UserController {
@@ -21,7 +22,7 @@ export class UserController {
 
     // This Method will be called when we hit the route /user
     @Post()
-    create(@Body() body:any) {
-        return body;
+    create(@Body() createUserDTO: CreateUserDTO) {
+        return createUserDTO;
     }
 }
